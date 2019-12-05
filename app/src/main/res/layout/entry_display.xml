@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"
+        android:textColorHint="@android:color/holo_blue_bright" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:hint="Category"
+        android:textColorHint="@android:color/holo_blue_bright" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/category"
+        android:hint="Date"
+        android:textColorHint="@android:color/holo_blue_bright" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/date"
+        android:hint="Amount"
+        android:textColorHint="@android:color/holo_blue_bright" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/amount"
+        android:hint="Note"
+        android:textColorHint="@android:color/holo_blue_bright" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="Add"
+        android:layout_below="@+id/note"
+        android:layout_centerInParent="true"
+        android:onClick="onClickAdd"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerInParent="true"
+        android:onClick="onClickChooseCategory"
+        android:text="Choose Category" />
+
+</LinearLayout>
